@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!--Model Viewer-->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+    <!-- Material Icons-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>PJ</title>
+    <link rel="icon" type="image/x-icon" href="/images/PJ-1.ico">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+<body class="grey lighten-2">
+    <header class="main-header">
+        <div class="navbar-fixed">
+            <nav>
+                <div class="nav-wrapper grey darken-4">
+                  <a href="#" class="hl"><img src="images/PJ-1.png" alt="PJ"></a>
+                  <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li class="active"><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="#req-modal" class="waves-effect waves-light btn grey darken-3 modal-trigger">Request</a></li>
+                  </ul>
+                  <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                </div>
+              </nav>
+        </div>
+    </header>
+<!--sidenav content-->
+    <div class="container">
+      <ul id="slide-out" class="sidenav">
+        <li><div class="user-view">
+          <div class="background">
+            <img src="images/office.jpg">
+          </div>
+          <a href="#user"><img class="circle" src="images/PJ-1.png"></a>
+          <a href="#name"><span class="white-text name">Paul Jeremiah</span></a>
+          <a href="#email"><span class="white-text email">example@gmail.com</span></a>
+        </div></li>
+        <li class="active"><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="#req-modal" class="waves-effect waves-light btn grey darken-3 modal-trigger">Request</a></li>
+      </ul>
+    </div>
+
+    <!--Modal Structure-->
+    <div id="req-modal" class="modal content">
+      <h3 class="center black-text">Make a Request</h3>
+      <br>
+
+      <div class="row">
+        <div class="col s6 m6 l6">
+          <img src="images/req.png" alt="">
+        </div>
+        <form class="col s6 m6 l6">
+          <br><br>
+          <input placeholder="Name" id="first_name" type="text" class="validate">
+          <br><br>
+          <input placeholder="Email" id="email" type="text" class="validate">
+          <br><br>
+          <input type="date"placeholder="dd/mm/yyyy"/>
+          <br><br>
+          <input class="black-text" type="file" id="myFile" name="filename">
+          <br><br><br>
+        </form>
+        <button class="btn waves-effect waves-light orange darken-3" style="border-radius:5px; margin-left: 150px;" type="submit" name="action">Submit
+          <i class="material-icons right">send</i>
+        </button>
+      </div>
+      </div>
+ 
+    <!--Model Viewer-->
+    <section class="section section-model">
+        <div class="row">
+            <div class="col s12 m6 l7 push-l5">
+                <div class="demo">
+                    <model-viewer src="astro.glb" auto-rotate camera-controls></model-viewer>
+                </div>
+            </div>
+
+            <div class="col s12 m3 l5 pull-l7">
+              <br><br><br>
+              <h1 class="center white-text darken-1"style="margin-top: 200px;">Need a 3D model?</h1>
+              <p class="flow-text center grey-text">I am a indie 3D modeler that make any kind of characters or object, from cartoon to realistic designs.</p>
+            </div>
+        </div>
+    </section>
+
+<!--Parallax-->
+    <section>
+    </div>
+    <div class="parallax-container white-text center">
+        <div class="parallax">
+            <img src="images/toonshaded1.jpeg" alt="">
+        </div>
+        <br><br><br>
+        <h3>You Imagine<span style="color:orange"> We will Make it Happen</span></h3>
+        <h5>Hundreds of design for you to gather ideas</h5>
+            <div class="carousel">
+                <a class="carousel-item" href="#one!"><img src="models/design1.webp"></a>
+                <a class="carousel-item" href="#two!"><img src="models/design2.webp"></a>
+                <a class="carousel-item" href="#three!"><img src="models/design3.webp"></a>
+                <a class="carousel-item" href="#four!"><img src="models/design4.webp"></a>
+                <a class="carousel-item" href="#five!"><img src="models/design5.webp"></a>
+                <a class="carousel-item" href="#six!"><img src="models/design6.webp"></a>
+                <a class="carousel-item" href="#seven!"><img src="models/design7.webp"></a>
+              </div>
+
+            
+        </div>
+    </div>
+    </section>
+<!--Grid-->
+    <section class="section section-grid hide-on-small-only">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 l6">
+                    <img src="images/astro.png" alt="">
+                </div>
+                <div class="col s12 l6">
+                    <div class="card orange darken-1" style="margin-top: 150px; border-radius:10px;">
+                      <div class="card-content white-text">
+                        <span class="card-title center">Astonishing Design</span>
+                        <p class="center">Your imagination will be the limit.</p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 l6">
+                    <div class="card purple darken-1" style="margin-top: 150px; border-radius:10px;">
+                      <div class="card-content white-text">
+                        <span class="card-title center">Card Title</span>
+                        <p class="center">I am a very simple card. I am good at containing small bits of information.
+                        I am convenient because I require little markup to use effectively.</p>
+                      </div>
+                    </div>
+                </div>
+                <div class="col s12 l6">
+                    <img src="images/rock.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+<!--Display Cards-->
+<section class="section section-display">
+  <br>
+  <h1 class="center black-text">3D Character Design</h1>
+  <p class="center grey-text">Take a look for some designs and idea for your character</p>
+  <br><br>
+  <div class="container">
+    <div class="row">
+      <div class="col s12 m6 l3">
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="models/a.webp">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Dog & Cat<i class="material-icons right">more_vert</i></span>
+            <p><a href="https://dribbble.com/shots/16248977-Dog-Cat-3D-illustration" target="_blank">Take a Look</a></p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Dog & Cat<i class="material-icons right">close</i></span>
+            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col s12 m6 l3">
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="models/a1.webp">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Flowers<i class="material-icons right">more_vert</i></span>
+            <p><a href="https://dribbble.com/shots/17314223-FLOWERS" target="_blank">Take a Look</a></p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Flowers<i class="material-icons right">close</i></span>
+            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col s12 m6 l3">
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="models/a2.webp">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Smithe<i class="material-icons right">more_vert</i></span>
+            <p><a href="https://dribbble.com/shots/14940408-Smithe" target="_blank">Take a Look</a></p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Smithe<i class="material-icons right">close</i></span>
+            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col s12 m6 l3">
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="models/a3.webp">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Dribble Man<i class="material-icons right">more_vert</i></span>
+            <p><a href="https://dribbble.com/shots/19367809-Dribbble-Man-Animated-3D-Character" target="_blank">Take a Look</a></p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Dribble Man<i class="material-icons right">close</i></span>
+            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col s12 m6 l3">
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="models/a4.webp">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Rocket Ship<i class="material-icons right">more_vert</i></span>
+            <p><a href="https://dribbble.com/shots/18063898-3D-Characters-Animation-for-AstroClash" target="_blank">Take a Look</a></p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Rocket Ship<i class="material-icons right">close</i></span>
+            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col s12 m6 l3">
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="models/a5.webp">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Monk Bird<i class="material-icons right">more_vert</i></span>
+            <p><a href="https://dribbble.com/shots/17073159-Monk-Bird" target="_blank">Take a Look</a></p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Monk Bird<i class="material-icons right">close</i></span>
+            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col s12 m6 l3">
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="models/a6.webp">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Builder<i class="material-icons right">more_vert</i></span>
+            <p><a href="https://dribbble.com/shots/16070925-Haircut" target="_blank">Take a Look</a></p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Builder<i class="material-icons right">close</i></span>
+            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col s12 m6 l3">
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="models/a7.webp">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Builder<i class="material-icons right">more_vert</i></span>
+            <p><a href="https://dribbble.com/shots/15595846-Builder" target="_blank">Take a Look</a></p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Builder<i class="material-icons right">close</i></span>
+            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col s12 m6 l3">
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="models/a8.webp">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Panda in the rain<i class="material-icons right">more_vert</i></span>
+            <p><a href="https://dribbble.com/shots/16564350-The-Panda-in-the-rain" target="_blank">Take a Look</a></p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Panda in the rain<i class="material-icons right">close</i></span>
+            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col s12 m6 l3">
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="models/a9.webp">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">GME-Kitchen<i class="material-icons right">more_vert</i></span>
+            <p><a href="https://dribbble.com/shots/16224805-GME-Kitchen" target="_blank">Take a Look</a></p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">GME-Kitchen<i class="material-icons right">close</i></span>
+            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col s12 m6 l3">
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="models/a10.webp">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Angry Walk<i class="material-icons right">more_vert</i></span>
+            <p><a href="https://dribbble.com/shots/15637459-Angry-walk" target="_blank">Take a Look</a></p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Angry Walk<i class="material-icons right">close</i></span>
+            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col s12 m6 l3">
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="models/a11.webp">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Molly the Fairy<i class="material-icons right">more_vert</i></span>
+            <p><a href="https://dribbble.com/shots/19736842-Molly-the-Fairy" target="_blank">Take a Look</a></p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Molly the Fairy<i class="material-icons right">close</i></span>
+            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!--Footer-->
+    <footer class="page-footer grey darken-2">
+        <div class="container">
+          <h5 class="center">Visit my social media accounts</h5 >
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li><a class="facebook" href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="twitter" href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="instagram" href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
+              <li><a class="youtube" href="#" target="_blank"><i class="fa fa-youtube"></i></a></li>
+              <li><a class="google" href="#" target="_blank"><i class="fa fa-google"></i></a></li>   
+            </ul>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+          © 2022 Copyright Text
+          <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+          </div>
+        </div>
+      </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+          $(document).ready(function(){
+            $('.sidenav').sidenav();
+            $('.parallax').parallax();
+            $('.carousel').carousel();
+            $('.collapsible').collapsible();
+            $('.modal').modal();
+        });
+  
+
+    </script>
+</body>
+</html>
